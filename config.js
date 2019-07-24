@@ -31,4 +31,48 @@ module.exports = {
       url: 'mailto:jeffcoat.megan@gmail.com',
     },
   ],
+
+  // project
+  pL1: [
+    {
+      style: 'brands',
+      icon: 'fa-github',
+      name: 'Github',
+      url: 'https://github.com/meganjeffcoat/User-Interface-Project-Week',
+    },
+    {
+      style: 'solid',
+      icon: 'fa-eye',
+      name: 'View',
+      url: 'https://distracted-brown-222a45.netlify.com/'
+    }
+  ],
+    pL2: [
+    {
+      style: 'brands',
+      icon: 'fa-github',
+      name: 'Github',
+      url: 'https://github.com/meganjeffcoat/front-end-project-week',
+    },
+    {
+      style: 'solid',
+      icon: 'fa-eye',
+      name: 'View',
+      url: 'https://infallible-nightingale-04222d.netlify.com/'
+    }
+  ],
+    pL3: [
+    {
+      style: 'brands',
+      icon: 'fa-github',
+      name: 'Github',
+      url: 'https://github.com/safespaceteam/safespacebackend',
+    },
+    {
+      style: 'solid',
+      icon: 'fa-eye',
+      name: 'View',
+      url: 'https://safespaceteam.github.io/safespaceuim/#'
+    }
+  ]
 };

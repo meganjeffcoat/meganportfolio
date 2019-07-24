@@ -4,9 +4,9 @@ import Layout from '../components/Layout';
 
 import Scroll from '../components/Scroll';
 
-import pic1 from '../assets/images/pic01.jpg';
-import pic2 from '../assets/images/pic02.jpg';
-import pic3 from '../assets/images/pic03.jpg';
+import pic1 from '../assets/images/projectweek.png'
+import pic2 from '../assets/images/notes.png';
+import pic3 from '../assets/images/safespace.png';
 import config from '../../config';
 const IndexPage = () => (
   <Layout>
@@ -31,7 +31,7 @@ const IndexPage = () => (
       </Scroll>
     </section>
 
-    <section id="one" className="wrapper style1 special">
+    {/* <section id="one" className="wrapper style1 special">
       <div className="inner">
         <header className="major">
           <h2>
@@ -65,23 +65,32 @@ const IndexPage = () => (
           </li>
         </ul>
       </div>
-    </section>
+    </section> */}
 
     <section id="two" className="wrapper alt style2">
       <section className="spotlight">
         <div className="image">
-          <img src={pic1} alt="" />
+          <img src={pic1} alt="S&J Architects" />
         </div>
         <div className="content">
           <h2>
-            Magna primis lobortis
-            <br />
-            sed ullamcorper
+            S&J Architects
           </h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            This page was created using HTML, JavaScript and LESS
           </p>
+          <ul className="icons">
+            {config.pL1.map(social => {
+            const { style, icon, name, url } = social;
+            return (
+              <li key={url}>
+                <a href={url} className={`icon ${style} ${icon}`}>
+                  <span className="label">{name}</span>
+                </a>
+              </li>
+              );
+            })}
+          </ul>
         </div>
       </section>
       <section className="spotlight">
@@ -90,14 +99,23 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2>
-            Tortor dolore feugiat
-            <br />
-            elementum magna
+            Notes
           </h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            Created with React, Redux, and Styled Components
           </p>
+          <ul className="icons">
+            {config.pL2.map(social => {
+            const { style, icon, name, url } = social;
+            return (
+              <li key={url}>
+                <a href={url} className={`icon ${style} ${icon}`}>
+                  <span className="label">{name}</span>
+                </a>
+              </li>
+              );
+            })}
+          </ul>
         </div>
       </section>
       <section className="spotlight">
@@ -106,14 +124,25 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2>
-            Augue eleifend aliquet
-            <br />
-            sed condimentum
+            Safe Space
           </h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            Send yourself a positive text. <br/>
+            I was the backend developer on this team. Utalizing express node 
+            and twillio for the messaging service. 
           </p>
+          <ul className="icons">
+            {config.pL3.map(social => {
+            const { style, icon, name, url } = social;
+            return (
+              <li key={url}>
+                <a href={url} className={`icon ${style} ${icon}`}>
+                  <span className="label">{name}</span>
+                </a>
+              </li>
+              );
+            })}
+          </ul>
         </div>
       </section>
     </section>
