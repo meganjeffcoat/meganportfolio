@@ -24,6 +24,12 @@ module.exports = {
       name: 'Twitter',
       url: 'https://twitter.com/_MeggieMae12',
     },
+        {
+      style: 'brands',
+      icon: 'fa-linkedin',
+      name: 'Linkedin',
+      url: 'https://www.linkedin.com/in/megan-jeffcoat-b46b8287/',
+    },
     {
       style: 'solid',
       icon: 'fa-envelope',
