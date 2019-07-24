@@ -7,7 +7,7 @@ import pic2 from '../assets/images/pic02.jpg';
 import pic3 from '../assets/images/pic03.jpg';
 import pic4 from '../assets/images/pic04.jpg';
 import pic5 from '../assets/images/pic05.jpg';
-import banner from '../assets/images/banner.jpg';
+import code from '../assets/images/code.jpg';
 const IndexPage = () => <Layout>
 	<article id="main">
 		<header>
@@ -309,7 +309,7 @@ const IndexPage = () => <Layout>
 					<h5>Fit</h5>
 					<div className="box alt">
 						<div className="row gtr-50 gtr-uniform">
-							<div className="col-12"><span className="image fit"><img src={banner} alt="" /></span></div>
+							<div className="col-12"><span className="image fit"><img src={code} alt="" /></span></div>
 							<div className="col-4"><span className="image fit"><img src={pic1} alt="" /></span></div>
 							<div className="col-4"><span className="image fit"><img src={pic2} alt="" /></span></div>
 							<div className="col-4"><span className="image fit"><img src={pic3} alt="" /></span></div>
