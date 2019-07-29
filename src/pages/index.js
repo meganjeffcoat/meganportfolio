@@ -31,41 +31,30 @@ const IndexPage = () => (
       </Scroll>
     </section>
 
-    {/* <section id="one" className="wrapper style1 special">
+    <section id="one" className="wrapper style1 special">
       <div className="inner">
         <header className="major">
-          <h2>
-            Arcu aliquet vel lobortis ata nisl
-            <br />
-            eget augue amet aliquet nisl cep donec
-          </h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
+            Currently attending Lambda School 
             <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
+            Living in Central Texas <br/>
+            Reach out and Let's Chat
           </p>
         </header>
         <ul className="icons major">
-          <li>
-            <span className="icon fa-gem major style1">
-              <span className="label">Lorem</span>
-            </span>
-          </li>
-          <li>
-            <span className="icon fa-heart major style2">
-              <span className="label">Ipsum</span>
-            </span>
-          </li>
-          <li>
-            <span className="icon solid fa-code major style3">
-              <span className="label">Dolor</span>
-            </span>
-          </li>
-        </ul>
+        {config.contactLinks.map(social => {
+          const { style, icon, name, url } = social;
+          return (
+            <li key={url}>
+              <a href={url} className={`icon ${style} ${icon}`}>
+                <span className="label">{name}</span>
+              </a>
+            </li>
+          );
+        })}
+      </ul>
       </div>
-    </section> */}
+    </section>
 
     <section id="two" className="wrapper alt style2">
       <section className="spotlight">
@@ -77,7 +66,8 @@ const IndexPage = () => (
             S&J Architects
           </h2>
           <p>
-            This page was created using HTML, JavaScript and LESS
+            A responsive modern architecture website <br />
+            Built with HTML, CSS and ES6 JavaScript <br />
           </p>
           <ul className="icons">
             {config.pL1.map(social => {
@@ -102,7 +92,8 @@ const IndexPage = () => (
             Notes
           </h2>
           <p>
-            Created with React, Redux, and Styled Components
+            A place to keep notes and the ability to update and remove them <br />
+            Made using React, Redux and Styled Components
           </p>
           <ul className="icons">
             {config.pL2.map(social => {
@@ -127,9 +118,9 @@ const IndexPage = () => (
             Safe Space
           </h2>
           <p>
-            Send yourself a positive text. <br/>
-            I was the backend developer on this team. Utalizing express node 
-            and twillio for the messaging service. 
+            Send yourself a positive text and brighten your day <br/>
+            Build by a team of five, my focus was on the backend. <br/>
+            Utalizing express node and twillio for the messaging service <br/>
           </p>
           <ul className="icons">
             {config.pL3.map(social => {
@@ -150,46 +141,39 @@ const IndexPage = () => (
     <section id="three" className="wrapper style3 special">
       <div className="inner">
         <header className="major">
-          <h2>Accumsan mus tortor nunc aliquet</h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
-            <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
-          </p>
+          <h2>Skills</h2>
         </header>
         <ul className="features">
           <li className="icon fa-paper-plane">
-            <h3>Arcu accumsan</h3>
+            <h3>HTML and CSS</h3>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+              Spent time focusing on the fundamentials to gain a deeper understanding
+              and build a strong foundation
             </p>
           </li>
           <li className="icon solid fa-laptop">
-            <h3>Ac Augue Eget</h3>
+            <h3>JavaScript</h3>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+              Focusing with ES6 and continuing to grown in JavaScript skill set
             </p>
           </li>
           <li className="icon solid fa-code">
-            <h3>Mus Scelerisque</h3>
+            <h3>React</h3>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+              Always transforming and growing, I expand my skills to learn the the newest
+              information in regards to react. I am proficient with Redux and growing
+              my knowledge with hooks. 
             </p>
           </li>
           <li className="icon solid fa-headphones-alt">
-            <h3>Mauris Imperdiet</h3>
+            <h3>Node</h3>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+              Node has been my primary focus for backend development. 
+              Continuing to grow my knowledge base beyond just node. 
             </p>
           </li>
-          <li className="icon fa-heart">
-            <h3>Aenean Primis</h3>
+          {/* <li className="icon fa-heart">
+            <h3></h3>
             <p>
               Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
               tincidunt nullam amet leo Aenean ligula consequat consequat.
@@ -201,12 +185,12 @@ const IndexPage = () => (
               Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
               tincidunt nullam amet leo Aenean ligula consequat consequat.
             </p>
-          </li>
+          </li> */}
         </ul>
       </div>
     </section>
 
-    <section id="cta" className="wrapper style4">
+    {/* <section id="cta" className="wrapper style4">
       <div className="inner">
         <header>
           <h2>Arcue ut vel commodo</h2>
@@ -228,7 +212,7 @@ const IndexPage = () => (
           </li>
         </ul>
       </div>
-    </section>
+    </section> */}
   </Layout>
 );
 
