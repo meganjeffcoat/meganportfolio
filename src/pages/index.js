@@ -155,8 +155,8 @@ const IndexPage = () => (
             <h3>React</h3>
             <p>
               Always transforming and growing, I expand my skills to learn the
-              the newest information in regards to react. Proficient with Redux
-              and growing my knowledge with hooks.
+              newest information in regards to react. Proficient with Redux and
+              growing my knowledge with hooks.
             </p>
           </li>
           <li className="icon solid fa-headphones-alt">
