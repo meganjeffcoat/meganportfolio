@@ -40,19 +40,19 @@ module.exports = {
   contactLinks: [
     {
       style: 'solid',
-      icon: 'fa-envelope fa-5x',
+      icon: 'fa-envelope fa-3x',
       name: 'Email',
       url: 'mailto:jeffcoat.megan@gmail.com',
     },
     {
       style: 'brands',
-      icon: 'fa-linkedin fa-5x',
+      icon: 'fa-linkedin fa-3x',
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/megan-jeffcoat-b46b8287/',
     },
     {
       style: 'brands',
-      icon: 'fa-twitter fa-5x',
+      icon: 'fa-twitter fa-3x',
       name: 'Twitter',
       url: 'https://twitter.com/_MeggieMae12',
     },
