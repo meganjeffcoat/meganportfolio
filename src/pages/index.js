@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 
 import Scroll from '../components/Scroll';
 
-import pic1 from '../assets/images/projectweek.png'
+import pic1 from '../assets/images/projectweek.png';
 import pic2 from '../assets/images/notes.png';
 import pic3 from '../assets/images/safespace.png';
 import config from '../../config';
@@ -35,25 +35,23 @@ const IndexPage = () => (
       <div className="inner">
         <header className="major">
           <p>
-            Living in Central Texas <br/>
+            Living in Central Texas <br />
             Reach out and Let's Chat
           </p>
         </header>
         <ul className="icons major">
-        {config.contactLinks.map(social => {
-          const { style, icon, name, url } = social;
-          return (
-            <li key={url}>
-              <a href={url} className={`icon ${style} ${icon}`}>
-                <span className="label">{name}</span>
-              </a>
-            </li>
-          );
-        })}
-      </ul>
-      <h2>
-        Current Projects
-      </h2>
+          {config.contactLinks.map(social => {
+            const { style, icon, name, url } = social;
+            return (
+              <li key={url}>
+                <a href={url} className={`icon ${style} ${icon}`}>
+                  <span className="label">{name}</span>
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+        <h2>Current Projects</h2>
       </div>
     </section>
 
@@ -63,22 +61,20 @@ const IndexPage = () => (
           <img src={pic1} alt="S&J Architects" />
         </div>
         <div className="content">
-          <h2>
-            S&J Architects
-          </h2>
+          <h2>S&J Architects</h2>
           <p>
             A responsive modern architecture website <br />
             Built with HTML, CSS and ES6 JavaScript <br />
           </p>
           <ul className="icons">
             {config.pL1.map(social => {
-            const { style, icon, name, url } = social;
-            return (
-              <li key={url}>
-                <a href={url} className={`icon ${style} ${icon}`}>
-                  <span className="label">{name}</span>
-                </a>
-              </li>
+              const { style, icon, name, url } = social;
+              return (
+                <li key={url}>
+                  <a href={url} className={`icon ${style} ${icon}`}>
+                    <span className="label">{name}</span>
+                  </a>
+                </li>
               );
             })}
           </ul>
@@ -89,22 +85,21 @@ const IndexPage = () => (
           <img src={pic2} alt="" />
         </div>
         <div className="content">
-          <h2>
-            Notes
-          </h2>
+          <h2>Notes</h2>
           <p>
-            A place to keep notes and the ability to update and remove them <br />
+            A place to keep notes and the ability to update and remove them{' '}
+            <br />
             Made using React, Redux and Styled Components
           </p>
           <ul className="icons">
             {config.pL2.map(social => {
-            const { style, icon, name, url } = social;
-            return (
-              <li key={url}>
-                <a href={url} className={`icon ${style} ${icon}`}>
-                  <span className="label">{name}</span>
-                </a>
-              </li>
+              const { style, icon, name, url } = social;
+              return (
+                <li key={url}>
+                  <a href={url} className={`icon ${style} ${icon}`}>
+                    <span className="label">{name}</span>
+                  </a>
+                </li>
               );
             })}
           </ul>
@@ -115,23 +110,21 @@ const IndexPage = () => (
           <img src={pic3} alt="" />
         </div>
         <div className="content">
-          <h2>
-            Safe Space
-          </h2>
+          <h2>Safe Space</h2>
           <p>
-            Send yourself a positive text and brighten your day <br/>
-            Build by a team of five, my focus was on the backend. <br/>
-            Utalizing express node and twillio for the messaging service <br/>
+            Send yourself a positive text and brighten your day <br />
+            Built by a team of five, my focus was on the backend <br />
+            Utilizing express node and twillio for the messaging service <br />
           </p>
           <ul className="icons">
             {config.pL3.map(social => {
-            const { style, icon, name, url } = social;
-            return (
-              <li key={url}>
-                <a href={url} className={`icon ${style} ${icon}`}>
-                  <span className="label">{name}</span>
-                </a>
-              </li>
+              const { style, icon, name, url } = social;
+              return (
+                <li key={url}>
+                  <a href={url} className={`icon ${style} ${icon}`}>
+                    <span className="label">{name}</span>
+                  </a>
+                </li>
               );
             })}
           </ul>
@@ -148,8 +141,8 @@ const IndexPage = () => (
           <li className="icon fa-paper-plane">
             <h3>HTML and CSS</h3>
             <p>
-              Spent time focusing on the fundamentials to gain a deeper understanding
-              and build a strong foundation
+              Spent time focusing on the fundamentals to gain a deeper
+              understanding and build a strong foundation
             </p>
           </li>
           <li className="icon solid fa-laptop">
@@ -161,16 +154,16 @@ const IndexPage = () => (
           <li className="icon solid fa-code">
             <h3>React</h3>
             <p>
-              Always transforming and growing, I expand my skills to learn the the newest
-              information in regards to react. I am proficient with Redux and growing
-              my knowledge with hooks. 
+              Always transforming and growing, I expand my skills to learn the
+              the newest information in regards to react. Proficient with Redux
+              and growing my knowledge with hooks.
             </p>
           </li>
           <li className="icon solid fa-headphones-alt">
             <h3>Node</h3>
             <p>
-              Node has been my primary focus for backend development. 
-              Continuing to grow my knowledge base beyond just node. 
+              Node has been my primary focus for backend development Continuing
+              to grow my knowledge base beyond just node.
             </p>
           </li>
           {/* <li className="icon fa-heart">
