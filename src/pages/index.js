@@ -35,8 +35,6 @@ const IndexPage = () => (
       <div className="inner">
         <header className="major">
           <p>
-            Currently attending Lambda School 
-            <br />
             Living in Central Texas <br/>
             Reach out and Let's Chat
           </p>
@@ -53,6 +51,9 @@ const IndexPage = () => (
           );
         })}
       </ul>
+      <h2>
+        Current Projects
+      </h2>
       </div>
     </section>
 
