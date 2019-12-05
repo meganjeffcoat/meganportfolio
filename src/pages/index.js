@@ -4,6 +4,7 @@ import Layout from '../components/Layout';
 
 import Scroll from '../components/Scroll';
 
+import pic0 from '../assets/images/stampd.png';
 import pic1 from '../assets/images/projectweek.png';
 import pic2 from '../assets/images/notes.png';
 import pic3 from '../assets/images/safespace.png';
@@ -56,6 +57,32 @@ const IndexPage = () => (
     </section>
 
     <section id="two" className="wrapper alt style2">
+      <section className="spotlight">
+        <div className="image">
+          <img src={pic0} alt="S&J Architects" />
+        </div>
+        <div className="content">
+          <h2>Stampd</h2>
+          <p>
+            Tired of searching for your credentials? Waiting on hold with the <br/>
+            registrar office only to have to send in numerous documents and having to <br/>
+            wait for weeks? Stampd allows you to have your credentials in one place <br/>
+            directly from your institution and held on the blockchain. 
+          </p>
+          <ul className="icons">
+            {config.pL1.map(social => {
+              const { style, icon, name, url } = social;
+              return (
+                <li key={url}>
+                  <a href={url} className={`icon ${style} ${icon}`}>
+                    <span className="label">{name}</span>
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </section>
       <section className="spotlight">
         <div className="image">
           <img src={pic1} alt="S&J Architects" />

@@ -60,6 +60,20 @@ module.exports = {
   ],
 
   // project
+  pL0: [
+    {
+      style: 'brands',
+      icon: 'fa-github',
+      name: 'Github',
+      url: 'https://github.com/labs14-stampd',
+    },
+    {
+      style: 'solid',
+      icon: 'fa-eye',
+      name: 'View',
+      url: 'https://www.stampdcert.com/'
+    }
+  ],
   pL1: [
     {
       style: 'brands',
