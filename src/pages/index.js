@@ -64,7 +64,7 @@ const IndexPage = () => (
         <div className="content">
           <h2>Stampd</h2>
           <p>
-            Tired of searching for your credentials? Waiting on hold with the <
+            Tired of searching for your credentials? Waiting on hold with the 
             registrar office only to have to send in numerous documents and having to 
             wait for weeks? Stampd allows you to have your credentials in one place 
             directly from your institution and held on the blockchain. 
