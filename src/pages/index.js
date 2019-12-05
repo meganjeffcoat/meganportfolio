@@ -70,7 +70,7 @@ const IndexPage = () => (
             directly from your institution and held on the blockchain. 
           </p>
           <ul className="icons">
-            {config.pL1.map(social => {
+            {config.pL0.map(social => {
               const { style, icon, name, url } = social;
               return (
                 <li key={url}>
