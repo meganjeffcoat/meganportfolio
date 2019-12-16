@@ -53,8 +53,8 @@ const IndexPage = () => (
     </section>
 
     <section id="two" className="wrapper alt style2">
+    <h2>Current Projects</h2>
       <section className="spotlight">
-        <h2>Current Projects</h2>
         <div className="image">
           <img src={pic0} alt="Stampd" />
         </div>
