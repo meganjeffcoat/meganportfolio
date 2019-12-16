@@ -18,9 +18,6 @@ const IndexPage = () => (
         <ul className="actions special">
           <li>
             <Scroll type="id" element="one">
-              <a href="/#" className="button primary">
-                Explore
-              </a>
             </Scroll>
           </li>
         </ul>
@@ -52,22 +49,22 @@ const IndexPage = () => (
             );
           })}
         </ul>
-        <h2>Current Projects</h2>
       </div>
     </section>
 
     <section id="two" className="wrapper alt style2">
       <section className="spotlight">
+        <h2>Current Projects</h2>
         <div className="image">
-          <img src={pic0} alt="S&J Architects" />
+          <img src={pic0} alt="Stampd" />
         </div>
         <div className="content">
           <h2>Stampd</h2>
           <p>
-            Tired of searching for your credentials? Waiting on hold with the 
-            registrar office only to have to send in numerous documents and having to 
-            wait for weeks? Stampd allows you to have your credentials in one place 
-            directly from your institution and held on the blockchain. 
+            Stampd allows you to keep track of your credentials.
+            Your institution will upload the credential where it will be held
+            in the blockchain. You can access your credential with your account and 
+            add multiple email addresses that you may have your credentials under. 
           </p>
           <ul className="icons">
             {config.pL0.map(social => {
